@@ -1,0 +1,29 @@
+html {
+  color: black;
+  font-family: "Verdana", cursive, sans-serif;
+}
+
+body{
+  background-image:url('../images/arriere-plan.jpeg');
+  background-repeat:repeat;
+  background-position:right top;
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+}
+
+img.displayed{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.para{
+  font-style: italic;
+}
+
+ul{
+  text-align: left;
+}
