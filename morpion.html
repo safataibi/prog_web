@@ -7,15 +7,14 @@
   <script>
 var joueur = 1;
 $(document).ready(function(){
-  console.log($(this).html());
-  $("td").click(function(){
+  $("img").click(function(){
     if($(this).html() == '<img src="images/vide.png" alt=""/>')
     {
       if(joueur == 1){
         $(this).html('<img src="images/croix.png" alt=""/>');
         joueur = 2;
       }
-      else{
+      else if(joueur == 2) {
         $(this).html('<img src="images/cercle.png" alt=""/>');
         joueur = 1;
       }
@@ -27,7 +26,7 @@ $(document).ready(function(){
 });
 
 function init(){
-  $("td").html('<img src="images/vide.png" alt=""/>');
+  $("img").html('<img src="images/vide.png" alt=""/>');
 }
    </script>
    <style>
